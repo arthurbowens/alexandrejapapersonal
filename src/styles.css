@@ -1,3 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss';
 
-@import "tailwindcss";
+@theme {
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-logo: 'Bebas Neue', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --color-japa-black: #050505;
+  --color-japa-dark: #0c0c0f;
+  --color-japa-card: #12121a;
+  --color-japa-purple: #7c3aed;
+  --color-japa-purple-light: #a855f7;
+  --color-japa-purple-dark: #5b21b6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-japa-black);
+  color: #f4f4f5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: rgba(124, 58, 237, 0.4);
+  color: #fff;
+}
